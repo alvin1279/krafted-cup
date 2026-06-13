@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+/* div {
+  border: 2px;
+  border-style: solid;
+  border-color: white;
+} */
+
+.hero-background {
+  @apply bg-linear-to-t from-amber-900/10 via-amber-950/50 to-amber-900/10;
+}
+.offer-container {
+  /* width: 95%; */
+}
+.offer-heading {
+  /* position:absolute; */
+  /* border-radius: 5%; */
+  /* border-top-left-radius: 20%; */
+  /* border-bottom-left-radius: 20%; */
+}
+/* .offer-boxes{
+  width: auto;
+
+} */
