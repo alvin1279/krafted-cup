@@ -1,13 +1,13 @@
 import Footer from "~/components/footer";
 import Header from "~/components/header";
-import Menu from "~/components/Menu";
+import Menu from "~/components/menu";
 
 export default function Products() {
   return (
     <>
       <Header />
       <section className="menu-section min-h-[80dvh] flex flex-col gap-1">
-        <div className="menu-header min-h-1/5 max-h-1/4 bg-amber-600 pl-2 flex flex-col gap-1">
+        <div className="menu-header min-h-1/5 max-h-1/4 bg-amber-700 pl-2 flex flex-col gap-1">
           <h1 className="text-2xl sm:text-4xl md:text-6xl font-medium">
             Search Products
           </h1>

@@ -6,7 +6,7 @@ const OFFERS = [
   { id: 1, sourceUrl: "https://picsum.photos/300/400" },
   { id: 2, sourceUrl: "https://picsum.photos/400/400" },
   { id: 3, sourceUrl: "https://picsum.photos/400/400" },
-  { id: 4, sourceUrl: "https://picsum.photos/400/400" }, // fixed duplicate id
+  { id: 4, sourceUrl: "https://picsum.photos/400/400" },
 ];
 const SERVICES = [
   { id: 11, sourceUrl: "https://picsum.photos/200/300" },
@@ -14,7 +14,6 @@ const SERVICES = [
   { id: 33, sourceUrl: "https://picsum.photos/200/300" },
   { id: 34, sourceUrl: "https://picsum.photos/200/300" },
   { id: 35, sourceUrl: "https://picsum.photos/200/300" },
-
 ];
 
 export default function Hero() {
