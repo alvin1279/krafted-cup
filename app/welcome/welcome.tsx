@@ -9,7 +9,6 @@ export function Welcome() {
       <Header />
       <Hero />
       <Footer />
-      <MenuItem />
     </main>
   );
 }
