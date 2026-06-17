@@ -31,7 +31,7 @@ export default function Hero() {
         <div
           className="offer-boxes w-full flex flex-col items-center gap-6
           md:flex-row md:items-stretch md:justify-start
-          mt-5 md:overflow-x-auto md:overflow-y-hidden hover:text-shadow-lg hover:text-shadow-amber-950"
+          mt-5 md:overflow-x-auto md:overflow-y-hidden"
         >
           {OFFERS.map((source) => (
             <div key={source.id} className="w-full md:w-auto md:shrink-0">
