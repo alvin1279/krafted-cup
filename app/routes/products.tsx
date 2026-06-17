@@ -7,7 +7,11 @@ export default function Products() {
     <>
       <Header />
       <section className="menu-section h-[80dvh] flex flex-col gap-1 bg-[url(https://picsum.photos/1000/500)]">
-        <div className="menu-header min-h-20 sm:min-h-32 max-h-1/4 bg-amber-700 pl-2 flex flex-col gap-1">
+        <div className="menu-header min-h-20 sm:min-h-32 max-h-1/4
+         bg-amber-700 
+         pl-3
+         md:pl-9 
+         flex flex-col gap-1">
           <h1 className="text-2xl sm:text-4xl md:text-6xl font-medium">
             Search Products
           </h1>
@@ -18,7 +22,7 @@ export default function Products() {
                 className="bg-gray-100
                  rounded-full
                          min-w-1xl w-2xs sm:w-2xl 
-                        pl-2.5  pr-2.5 
+                        pl-2.5  pr-25 
                          overflow-y-hidden 
                          whitespace-nowrap 
                          overflow-x-scroll"
