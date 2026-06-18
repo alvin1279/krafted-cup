@@ -6,7 +6,9 @@ export default function Products() {
   return (
     <>
       <Header />
-      <section className="menu-section h-[80dvh] flex flex-col gap-1 bg-[url(https://picsum.photos/1000/500)]">
+      <section className="menu-section h-[80dvh] flex flex-col gap-1 
+      bg-[url(https://picsum.photos/1000/500)] bg-cover bg-fixed
+      ">
         <div className="menu-header min-h-20 sm:min-h-32 max-h-1/4
          bg-amber-700 
          pl-3
