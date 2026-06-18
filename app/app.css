@@ -23,6 +23,15 @@
     var(--color-slate-900) 70%,
     var(--color-slate-800) 90%
   );
+
+  --background-image-amber-grad-t: linear-gradient(
+    to top,
+    oklch(from var(--color-amber-700) l c h / 0.2) 0%,
+    oklch(from var(--color-amber-700) l c h / 0.5) 5%,
+    var(--color-amber-700) 25%,
+    var(--color-amber-600) 70%,
+    var(--color-amber-500) 90%
+  );
 }
 
 html,
