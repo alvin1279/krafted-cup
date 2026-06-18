@@ -1,13 +1,17 @@
+import { Interface } from "readline";
 import MenuItem from "./menuItem";
 
-const MENU_ITEMS = Array.from({ length: 75 }, (_, i) => ({
-  id: i,
-  itemName: `Item ${i + 1}`,
-  sourceUrl:
-    (i % 2 === 0) || (i % 5 === 0) ? `https://picsum.photos/seed/${i}/200/200` : undefined,
-}));
+interface MenuItemProps {
+  id: number;
+  sourceUrl?: string;
+  itemName: string;
+}
 
-export default function Menu() {
+interface MenuProps {
+  menu_items: MenuItemProps[];
+}
+
+export default function Menu({ menu_items }: MenuProps) {
   return (
     <div className="flex justify-center w-full h-full">
       <section
@@ -15,7 +19,7 @@ export default function Menu() {
         grid-cols-3 gap-4 lg:gap-6 
         md:grid-cols-[repeat(auto-fill,minmax(10rem,1fr))]"
       >
-        {MENU_ITEMS.map((item) => (
+        {menu_items.map((item) => (
           <MenuItem
             key={item.id}
             itemName={item.itemName}
