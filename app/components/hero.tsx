@@ -14,15 +14,19 @@ const SERVICES = [
   { id: 34, sourceUrl: "https://picsum.photos/200/300" },
   { id: 35, sourceUrl: "https://picsum.photos/200/300" },
 ];
+const BG_URL = "https://picsum.photos/1920/1080";
 
 export default function Hero() {
   return (
-    <section className="hero-background w-full mx-auto text-center flex flex-col justify-center items-center
+    <section
+      className="hero-background w-full mx-auto text-center flex flex-col justify-center items-center
     
      bg-amber-950/50 lg:min-h-[70dvh]
-      bg-[url(https://picsum.photos/1920/1080)] bg-cover bg-fixed
+       bg-cover bg-fixed
      
-     ">
+     "
+      style={{ backgroundImage: `url(${BG_URL})` }}
+    >
       <div className="offer-container py-7 md:py-3 flex flex-col justify-center items-center w-11/12">
         <h1
           className="offer-heading self-start w-48 rounded-full text-4xl text-amber-700 bg-slate-950/80 pt-2 pb-2 

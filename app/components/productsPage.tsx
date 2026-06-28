@@ -5,6 +5,8 @@ import Menu from "./menu";
 import { SearchBar } from "./searchBar";
 import { MENU_ITEMS, searchMenuItems } from "./menuItems";
 
+const BG_URL = "https://picsum.photos/1920/1080";
+
 export default function ProductsPage() {
   const [query, setQuery] = useState("");
   const filteredItems = useMemo(
@@ -26,10 +28,11 @@ export default function ProductsPage() {
             md:h-120
             overflow-hidden
           menu-items-section
-           bg-[url(https://picsum.photos/1920/1080)] bg-cover bg-fixed
+            bg-cover bg-fixed
            ring-6 ring-black
            overflow-y-scroll
            "
+          style={{ backgroundImage: `url(${BG_URL})` }}
         >
           {filteredItems.length > 0 ? (
             <Menu menu_items={filteredItems} />
