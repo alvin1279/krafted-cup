@@ -25,7 +25,7 @@ export default function Header() {
             Products
           </a>
           <a
-            href="#"
+            href="/contact-us"
             className="text-sm sm:text-xl font-medium text-amber-700 hover:text-amber-500 transition-colors"
           >
             Contact
@@ -64,7 +64,7 @@ export default function Header() {
             Products
           </a>
           <a
-            href="#"
+            href="/contact-us"
             className="text-sm font-medium text-amber-700 hover:text-amber-500 transition-colors"
             onClick={() => setMenuOpen(false)}
           >
