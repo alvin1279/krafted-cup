@@ -28,7 +28,7 @@ export default function Contact() {
   return (
     <>
       <Header />
-      <section className="contact-hero bg-amber-grad-t min-h-[40dvh] flex flex-col justify-center pl-3 md:pl-9">
+      <section className="contact-hero bg-amber-grad-t min-h-[20dvh] flex flex-col justify-center pl-3 md:pl-9">
         <h1 className="text-2xl sm:text-4xl md:text-6xl font-medium text-black">
           Contact Us
         </h1>
@@ -81,11 +81,42 @@ export default function Contact() {
           <button
             type="submit"
             disabled={isPending}
-            className="bg-brand-grad-b text-amber-50 font-medium rounded-full px-6 py-2.5 w-fit mt-2
-            active:translate-x-0.5 active:scale-y-105 transition-transform
-            disabled:opacity-50 disabled:cursor-not-allowed disabled:active:translate-x-0 disabled:active:scale-y-100"
+            className="relative bg-amber-grad-t text-amber-50 font-medium rounded-full px-6 py-2.5 w-fit mt-2
+            transition-all duration-200 ease-out
+            hover:brightness-110 hover:shadow-lg hover:shadow-amber-700/30
+            active:translate-x-0.5 active:scale-y-105
+            disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:brightness-100 disabled:hover:shadow-none disabled:active:translate-x-0 disabled:active:scale-y-100
+            focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
           >
-            {isPending ? "Sending..." : "Send Message"}
+            <span
+              className={`flex items-center gap-2 transition-opacity ${isPending ? "opacity-0" : "opacity-100"}`}
+            >
+              Send Message
+            </span>
+            {isPending && (
+              <span className="absolute inset-0 flex items-center justify-center gap-2">
+                <svg
+                  className="animate-spin h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <circle
+                    className="opacity-25"
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="currentColor"
+                    strokeWidth="4"
+                  />
+                  <path
+                    className="opacity-75"
+                    fill="currentColor"
+                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+                  />
+                </svg>
+                Sending...
+              </span>
+            )}
           </button>
 
           {/* 5. Render server/action response */}
