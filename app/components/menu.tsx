@@ -1,4 +1,3 @@
-import { Interface } from "readline";
 import MenuItem from "./menuItem";
 
 interface MenuItemProps {
@@ -13,11 +12,15 @@ interface MenuProps {
 
 export default function Menu({ menu_items }: MenuProps) {
   return (
-    <div className="flex justify-center w-full h-full">
+    <div
+      className="flex justify-center w-full h-fit
+    "
+    >
       <section
-        className="w-full h-full overflow-y-scroll grid 
+        className="w-full h-fit grid 
         grid-cols-3 gap-4 lg:gap-6 
-        md:grid-cols-[repeat(auto-fill,minmax(10rem,1fr))]"
+        md:grid-cols-[repeat(auto-fill,minmax(10rem,1fr))]
+        "
       >
         {menu_items.map((item) => (
           <MenuItem

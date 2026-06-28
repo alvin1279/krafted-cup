@@ -18,6 +18,7 @@ const SERVICES = [
 export default function Hero() {
   return (
     <section className="hero-background w-full mx-auto text-center flex flex-col justify-center items-center
+    
      bg-amber-950/50 lg:min-h-[70dvh]
       bg-[url(https://picsum.photos/1920/1080)] bg-cover bg-fixed
      
