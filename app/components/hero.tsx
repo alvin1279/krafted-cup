@@ -8,11 +8,11 @@ const OFFERS = [
   { id: 4, sourceUrl: "https://picsum.photos/400/400" },
 ];
 const SERVICES = [
-  { id: 11, sourceUrl: "https://picsum.photos/200/300" },
-  { id: 22, sourceUrl: "https://picsum.photos/200/300" },
-  { id: 33, sourceUrl: "https://picsum.photos/200/300" },
-  { id: 34, sourceUrl: "https://picsum.photos/200/300" },
-  { id: 35, sourceUrl: "https://picsum.photos/200/300" },
+  { id: "11Td_Logo", sourceUrl: "/TD-Logo.svg" },
+  { id: "BitCoinLogo", sourceUrl: "/Bitcoin.svg.png" },
+  { id: "propaneLog", sourceUrl: "/propane.png" },
+  { id: "vapeLogo", sourceUrl: "https://picsum.photos/200/300" },
+  { id: "OLGlogo", sourceUrl: "/OLG.png" },
 ];
 const BG_URL = "https://picsum.photos/1920/1080";
 
